@@ -1,0 +1,313 @@
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.styleInputDiv {
+  width: 60%;
+  margin-left: 22%;
+}
+.textBold {
+  font-weight: bold;
+}
+.boutonForm {
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+.divInformationEtudiant > span {
+  font-weight: bold;
+  margin-right: 5px;
+  float: left;
+}
+.divInformationEtudiant > h4 {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 2%;
+}
+.modifTitreFormulaire {
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.modifThAction {
+  width: 1%;
+  text-align: center;
+}
+
+.borderRadius {
+  border-radius: 1%;
+}
+
+header {
+  margin: 1% 2% 1% 2%;
+}
+h2 {
+  margin-left: 2%;
+}
+h3 {
+  font-size: 25px;
+}
+
+.tailleDeLaDivLogo {
+  width: 80%;
+}
+
+.navModification {
+  background-color: rgb(255, 255, 255) !important;
+  border: 1px solid black;
+  box-shadow: 10px 5px 5px black;
+}
+.modificationLienNav {
+  color: black !important;
+  font-size: 16px;
+}
+.tableauEtudiants {
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 60%;
+  position: relative;
+}
+.marginTop {
+  margin-top: 2%;
+}
+
+.modificationButtonAjouter {
+  margin-left: 2%;
+  /* width: 10%; */
+}
+
+.divInformationEtudiant {
+  border: 1px solid black;
+  height: 30%;
+  width: 50%;
+  margin-left: 2%;
+  margin-top: 2%;
+  position: relative;
+  margin-bottom: 2%;
+  overflow: auto;
+}
+
+.borderR {
+  border-right: 1px solid black;
+}
+
+.imgCapgeminiLogo {
+  width: 10%;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  figure {
+    text-align: center;
+    margin-top: 2%;
+  }
+  .imgCapgemini {
+    width: 50%;
+  }
+
+  .contenuDeLaPageAccueil {
+    display: grid;
+    /* grid-auto-rows: max-content; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px;
+    grid-gap: 5px;
+
+    grid-template-areas:
+      "groupeSalesforce  "
+      "objectif "
+      "deroulement";
+    /* margin: 0xp 40px 0px 40px; */
+  }
+
+  .enfantContenuDeLaPageAccueil {
+    background-color: rgb(140, 212, 245);
+    border: 2px solid rgb(255, 255, 255);
+    height: 200px;
+    font-weight: bold;
+  }
+
+  .enfantContenuDeLaPageAccueil:nth-child(1) {
+    grid-area: groupeSalesforce;
+    display: inline-block;
+  }
+
+  .enfantContenuDeLaPageAccueil:nth-child(2) {
+    grid-area: objectif;
+  }
+  .enfantContenuDeLaPageAccueil:nth-child(3) {
+    grid-area: deroulement;
+  }
+
+  .conteneurImg {
+    display: grid;
+    /* grid-auto-rows: 300px;
+    grid-column: 300px; */
+    grid-template-rows: 200px;
+    grid-gap: 5px;
+    margin-top: 2%;
+    grid-template-areas: "image1 image2 image3";
+  }
+
+  .imageDuConteneur {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+  }
+
+  .imageDuConteneur > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .imageDuConteneur:nth-child(1) {
+    grid-area: image1;
+  }
+  .imageDuConteneur:nth-child(2) {
+    grid-area: image2;
+  }
+  .imageDuConteneur:nth-child(3) {
+    grid-area: image3;
+  }
+
+  .footer {
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-auto-rows: 100px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "newsletter  "
+      "notre_adresse";
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border: 2px solid rgb(255, 255, 255);
+    padding-right: 40px;
+    padding-left: 40px;
+    display: inline-block;
+  }
+  .left {
+    grid-area: newsletter;
+    background-color: rgb(140, 212, 245);
+  }
+  .right {
+    grid-area: notre_adresse;
+    background-color: rgb(140, 212, 245);
+    margin-bottom: 20px;
+  }
+  .left {
+    grid-area: newsletter;
+    background-color: rgb(140, 212, 245);
+  }
+  .right {
+    grid-area: notre_adresse;
+    background-color: rgb(140, 212, 245);
+  }
+  .textwhite {
+    color: white;
+  }
+}
+@media screen and (min-width: 768px) {
+  figure {
+    text-align: center;
+    margin-top: 2%;
+  }
+  .imgCapgemini {
+    width: 50%;
+  }
+
+  .contenuDeLaPageAccueil {
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-template-areas:
+      "groupeSalesforce groupeSalesforce objectif "
+      "groupeSalesforce groupeSalesforce deroulement";
+  }
+
+  .enfantContenuDeLaPageAccueil {
+    background-color: rgb(140, 212, 245);
+    border: 2px solid rgb(255, 255, 255);
+    margin: 10px 10px 10px 10px;
+    font-weight: bold;
+  }
+
+  .enfantContenuDeLaPageAccueil:nth-child(1) {
+    grid-area: groupeSalesforce;
+  }
+
+  .enfantContenuDeLaPageAccueil:nth-child(2) {
+    overflow: auto;
+    grid-area: objectif;
+    height: 100%;
+  }
+  .enfantContenuDeLaPageAccueil:nth-child(3) {
+    grid-area: deroulement;
+  }
+
+  .conteneurImg {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: 260px;
+    grid-template-areas: "image1 image2 image3";
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-auto-rows: max-content;
+  }
+
+  .imageDuConteneur {
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid black; */
+    margin-top: 2%;
+  }
+  .imageDuConteneur > img {
+    width: 70%;
+    height: 100%;
+  }
+
+  .imageDuConteneur:nth-child(1) {
+    grid-area: image1;
+  }
+  .imageDuConteneur:nth-child(2) {
+    grid-area: image2;
+  }
+  .imageDuConteneur:nth-child(3) {
+    grid-area: image3;
+  }
+
+  .footer {
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-auto-rows: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "   notre_adresse newsletter ";
+    margin-top: 100px;
+    margin-bottom: 25px;
+    border: 2px solid rgb(255, 255, 255);
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .left {
+    grid-area: newsletter;
+    background-color: rgb(140, 212, 245);
+  }
+  .right {
+    grid-area: notre_adresse;
+    background-color: rgb(140, 212, 245);
+  }
+  .textwhite {
+    color: white;
+  }
+}
+.modifFormulaire {
+  border: 1px solid black;
+  width: 50%;
+}
+
+.modifInput {
+  border-color: black;
+}
